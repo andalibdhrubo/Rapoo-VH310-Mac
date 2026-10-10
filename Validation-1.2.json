@@ -1,0 +1,8 @@
+{
+  "version": "1.2.0",
+  "portable_dsp": "passed ASan/UBSan; leak detection disabled due to environment",
+  "ui": "passed JS syntax and mocked bridge behavior",
+  "native_build": "not run: Linux host without macOS SDK",
+  "headset_listening": "not run",
+  "quiet_440hz_gain_vs_bypass_db": 3.86
+}

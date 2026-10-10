@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "portable_C": "passed: measured HRIR impulses, LFE, rotation, split buffers, bypass, four rates, finite/bounded output",
+  "UI": "passed: mock DOM controls, bridge, invalid/old profiles, speaker state and scaling",
+  "demo": "passed: standard 0x63f mask, isolated WAVE channel order FL FR C LFE BL BR SL SR",
+  "native_macOS": "not compiled or listened to in Linux environment",
+  "real_browser": "unavailable: browser download failed",
+  "known_monitor_issue": "monitoring disabled in final UI",
+  "system_audio": "stereo tap with surround upmix; no system 8-channel virtual device"
+}

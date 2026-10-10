@@ -1,0 +1,4992 @@
+{
+  "class": "TAudioMainForm",
+  "name": "AudioMainForm",
+  "props": {
+    "Left": 184,
+    "Top": 262,
+    "BorderStyle": "bsNone",
+    "Caption": "USBAudioApp",
+    "ClientHeight": 513,
+    "ClientWidth": 819,
+    "Color": "clBtnFace",
+    "TransparentColorValue": "clBtnFace",
+    "DoubleBuffered": true,
+    "Font.Charset": "DEFAULT_CHARSET",
+    "Font.Color": "clWindowText",
+    "Font.Height": -11,
+    "Font.Name": "MS Sans Serif",
+    "Font.Style": [],
+    "OldCreateOrder": false,
+    "Position": "poScreenCenter",
+    "Scaled": false,
+    "OnActivate": "FormActivate",
+    "OnCreate": "FormCreate",
+    "OnDestroy": "FormDestroy",
+    "OnMouseDown": "FormMouseDown",
+    "PixelsPerInch": 96,
+    "TextHeight": 13
+  },
+  "children": [
+    {
+      "class": "TImage",
+      "name": "MainFormImage",
+      "props": {
+        "Left": 0,
+        "Top": 0,
+        "Width": 800,
+        "Height": 500,
+        "Picture.Data": {
+          "extracted_binary_bytes": 1600066
+        },
+        "OnMouseDown": "FormMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "Menu1Image",
+      "props": {
+        "Tag": 2,
+        "Left": 392,
+        "Top": 56,
+        "Width": 64,
+        "Height": 32,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "Menu2Image",
+      "props": {
+        "Tag": 3,
+        "Left": 456,
+        "Top": 56,
+        "Width": 64,
+        "Height": 32,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "Menu3Image",
+      "props": {
+        "Tag": 4,
+        "Left": 520,
+        "Top": 56,
+        "Width": 64,
+        "Height": 32,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "SyncImage",
+      "props": {
+        "Tag": 28,
+        "Left": 496,
+        "Top": 446,
+        "Width": 22,
+        "Height": 21,
+        "Picture.Data": {
+          "extracted_binary_bytes": 4534
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "SyncLabel",
+      "props": {
+        "Tag": 28,
+        "Left": 412,
+        "Top": 453,
+        "Width": 78,
+        "Height": 14,
+        "Alignment": "taRightJustify",
+        "AutoSize": false,
+        "Caption": "Synchronization",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clInactiveCaption",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TBevel",
+      "name": "Bevel1",
+      "props": {
+        "Left": 425,
+        "Top": 416,
+        "Width": 8,
+        "Height": 17,
+        "Shape": "bsRightLine",
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "Menu1Label",
+      "props": {
+        "Tag": 2,
+        "Left": 392,
+        "Top": 64,
+        "Width": 64,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "BiDiMode": "bdLeftToRight",
+        "Caption": "Save",
+        "Color": "clBtnFace",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clMenu",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentBiDiMode": false,
+        "ParentColor": false,
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "Menu2Label",
+      "props": {
+        "Tag": 3,
+        "Left": 456,
+        "Top": 64,
+        "Width": 64,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Load",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clMenu",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "Menu3Label",
+      "props": {
+        "Tag": 4,
+        "Left": 520,
+        "Top": 64,
+        "Width": 64,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "About",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clMenu",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "SettingLabel",
+      "props": {
+        "Left": 469,
+        "Top": 440,
+        "Width": 150,
+        "Height": 14,
+        "Alignment": "taRightJustify",
+        "AutoSize": false,
+        "Caption": "Current Sound Settings : ",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "SXLabel",
+      "props": {
+        "Left": 722,
+        "Top": 453,
+        "Width": 50,
+        "Height": 14,
+        "AutoSize": false,
+        "Caption": "S1",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "CompanyNameLabel",
+      "props": {
+        "Left": 111,
+        "Top": 137,
+        "Width": 234,
+        "Height": 28,
+        "Caption": "Solid State System",
+        "Font.Charset": "ANSI_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -24,
+        "Font.Name": "Consolas",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "FeaturesLabel",
+      "props": {
+        "Left": 48,
+        "Top": 325,
+        "Width": 144,
+        "Height": 38,
+        "Caption": "FEATURES",
+        "Font.Charset": "ANSI_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -33,
+        "Font.Name": "Consolas",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "DeviceActiveLabel",
+      "props": {
+        "Left": 633,
+        "Top": 64,
+        "Width": 80,
+        "Height": 13,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Device Unactive",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clAqua",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "LEDImage",
+      "props": {
+        "Tag": 51,
+        "Left": 692,
+        "Top": 405,
+        "Width": 66,
+        "Height": 26,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 21812
+        },
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "Back_EQImage",
+      "props": {
+        "Left": 0,
+        "Top": 3,
+        "Width": 365,
+        "Height": 292,
+        "Picture.Data": {
+          "extracted_binary_bytes": 320098
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ12000HzBarImage",
+      "props": {
+        "Tag": 133,
+        "Left": 311,
+        "Top": 84,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ12000HzLabel",
+      "props": {
+        "Left": 308,
+        "Top": 270,
+        "Width": 51,
+        "Height": 16,
+        "Caption": "12000HZ",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindowText",
+        "Font.Height": -13,
+        "Font.Name": "Sakkal Majalla",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ12000HzValueImage",
+      "props": {
+        "Left": 311,
+        "Top": 66,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ12000HzValueLabel",
+      "props": {
+        "Tag": 33,
+        "Left": 322,
+        "Top": 70,
+        "Width": 7,
+        "Height": 16,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ1200HzBarImage",
+      "props": {
+        "Tag": 131,
+        "Left": 189,
+        "Top": 84,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ1200HzLabel",
+      "props": {
+        "Left": 188,
+        "Top": 270,
+        "Width": 44,
+        "Height": 16,
+        "Caption": "1200HZ",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindowText",
+        "Font.Height": -13,
+        "Font.Name": "Sakkal Majalla",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ1200HzValueImage",
+      "props": {
+        "Left": 189,
+        "Top": 66,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ1200HzValueLabel",
+      "props": {
+        "Tag": 31,
+        "Left": 200,
+        "Top": 70,
+        "Width": 7,
+        "Height": 16,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ300HzBarImage",
+      "props": {
+        "Tag": 130,
+        "Left": 128,
+        "Top": 84,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ300HzLabel",
+      "props": {
+        "Left": 130,
+        "Top": 270,
+        "Width": 37,
+        "Height": 16,
+        "Caption": "300HZ",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindowText",
+        "Font.Height": -13,
+        "Font.Name": "Sakkal Majalla",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ300HzValueImage",
+      "props": {
+        "Left": 128,
+        "Top": 66,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ300HzValueLabel",
+      "props": {
+        "Tag": 30,
+        "Left": 139,
+        "Top": 70,
+        "Width": 7,
+        "Height": 16,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ3600HzBarImage",
+      "props": {
+        "Tag": 132,
+        "Left": 250,
+        "Top": 84,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ3600HzLabel",
+      "props": {
+        "Left": 249,
+        "Top": 270,
+        "Width": 44,
+        "Height": 16,
+        "Caption": "3600HZ",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindowText",
+        "Font.Height": -13,
+        "Font.Name": "Sakkal Majalla",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ3600HzValueImage",
+      "props": {
+        "Left": 250,
+        "Top": 66,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ3600HzValueLabel",
+      "props": {
+        "Tag": 32,
+        "Left": 261,
+        "Top": 70,
+        "Width": 7,
+        "Height": 16,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ3DENImage",
+      "props": {
+        "Tag": 8,
+        "Left": 129,
+        "Top": 8,
+        "Width": 123,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 13842
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ3DENLabel",
+      "props": {
+        "Tag": 8,
+        "Left": 122,
+        "Top": 5,
+        "Width": 121,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "3D-EN",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ60HzBarImage",
+      "props": {
+        "Tag": 129,
+        "Left": 67,
+        "Top": 84,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ60HzLabel",
+      "props": {
+        "Left": 72,
+        "Top": 270,
+        "Width": 30,
+        "Height": 16,
+        "Caption": "60HZ",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindowText",
+        "Font.Height": -13,
+        "Font.Name": "Sakkal Majalla",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ60HzValueImage",
+      "props": {
+        "Left": 67,
+        "Top": 66,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQ60HzValueLabel",
+      "props": {
+        "Tag": 29,
+        "Left": 78,
+        "Top": 70,
+        "Width": 7,
+        "Height": 16,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQEQENImage",
+      "props": {
+        "Tag": 7,
+        "Left": 8,
+        "Top": 8,
+        "Width": 123,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 13842
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQEQENLabel",
+      "props": {
+        "Tag": 7,
+        "Left": -5,
+        "Top": 5,
+        "Width": 121,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "BiDiMode": "bdLeftToRight",
+        "Caption": "EQ-EN",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentBiDiMode": false,
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQGraduationImage",
+      "props": {
+        "Left": 25,
+        "Top": 102,
+        "Width": 36,
+        "Height": 153,
+        "Picture.Data": {
+          "extracted_binary_bytes": 22098
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQResetImage",
+      "props": {
+        "Tag": 5,
+        "Left": 250,
+        "Top": 8,
+        "Width": 123,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 13842
+        },
+        "Stretch": true,
+        "OnClick": "EQResetImageClick",
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQResetLabel",
+      "props": {
+        "Tag": 5,
+        "Left": 243,
+        "Top": 5,
+        "Width": 121,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "RESET",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnClick": "EQResetLabelClick",
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQS1Image",
+      "props": {
+        "Tag": 9,
+        "Left": 0,
+        "Top": 27,
+        "Width": 93,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 10482
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQS1Label",
+      "props": {
+        "Tag": 9,
+        "Left": 1,
+        "Top": 32,
+        "Width": 93,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "S1",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clHighlight",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQS2Image",
+      "props": {
+        "Tag": 10,
+        "Left": 91,
+        "Top": 27,
+        "Width": 93,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 10482
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQS2Label",
+      "props": {
+        "Tag": 10,
+        "Left": 91,
+        "Top": 32,
+        "Width": 93,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "S2",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQS3Image",
+      "props": {
+        "Tag": 11,
+        "Left": 182,
+        "Top": 27,
+        "Width": 93,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 10482
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQS3Label",
+      "props": {
+        "Tag": 11,
+        "Left": 182,
+        "Top": 32,
+        "Width": 93,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "S3",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQS4Image",
+      "props": {
+        "Tag": 12,
+        "Left": 272,
+        "Top": 27,
+        "Width": 93,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 10482
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EQS4Label",
+      "props": {
+        "Tag": 12,
+        "Left": 272,
+        "Top": 32,
+        "Width": 93,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "S4",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "Back_3DImage",
+      "props": {
+        "Left": 125,
+        "Top": 424,
+        "Width": 365,
+        "Height": 292,
+        "Picture.Data": {
+          "extracted_binary_bytes": 320098
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D33DENImage",
+      "props": {
+        "Left": 16,
+        "Top": 16,
+        "Width": 123,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 13842
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D33DENLabel",
+      "props": {
+        "Left": 0,
+        "Top": 5,
+        "Width": 123,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "3D-EN",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3AlphaImage",
+      "props": {
+        "Tag": 14,
+        "Left": 153,
+        "Top": 152,
+        "Width": 58,
+        "Height": 52,
+        "Picture.Data": {
+          "extracted_binary_bytes": 6546
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3BetaImage",
+      "props": {
+        "Tag": 15,
+        "Left": 153,
+        "Top": 216,
+        "Width": 58,
+        "Height": 52,
+        "Picture.Data": {
+          "extracted_binary_bytes": 6546
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3ButtonLineImage1",
+      "props": {
+        "Left": 121,
+        "Top": 6,
+        "Width": 3,
+        "Height": 19,
+        "Picture.Data": {
+          "extracted_binary_bytes": 294
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3ButtonLineImage2",
+      "props": {
+        "Left": 242,
+        "Top": 6,
+        "Width": 3,
+        "Height": 19,
+        "Picture.Data": {
+          "extracted_binary_bytes": 294
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3ConnectionImage",
+      "props": {
+        "Left": 133,
+        "Top": 105,
+        "Width": 87,
+        "Height": 38,
+        "Picture.Data": {
+          "extracted_binary_bytes": 13290
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3ConnectLabel",
+      "props": {
+        "Left": 143,
+        "Top": 117,
+        "Width": 65,
+        "Height": 13,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "CONNECTION",
+        "Color": "clWhite",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3FBMImage",
+      "props": {
+        "Tag": 13,
+        "Left": 121,
+        "Top": 0,
+        "Width": 123,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 13842
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3FBMLabel",
+      "props": {
+        "Tag": 13,
+        "Left": 121,
+        "Top": 5,
+        "Width": 123,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "FBM",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3LAlphaBarImage",
+      "props": {
+        "Left": 93,
+        "Top": 91,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3LAlphaGraduationImage",
+      "props": {
+        "Left": 69,
+        "Top": 111,
+        "Width": 20,
+        "Height": 153,
+        "Picture.Data": {
+          "extracted_binary_bytes": 12306
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3LAlphaLabel",
+      "props": {
+        "Left": 104,
+        "Top": 279,
+        "Width": 9,
+        "Height": 13,
+        "Caption": "\u03b1",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindowText",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3LAlphaSliderImage",
+      "props": {
+        "Tag": 35,
+        "Left": 87,
+        "Top": 143,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3LAlphaValueImage",
+      "props": {
+        "Left": 93,
+        "Top": 75,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3LAlphaValueLabel",
+      "props": {
+        "Tag": 35,
+        "Left": 105,
+        "Top": 80,
+        "Width": 6,
+        "Height": 14,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3LBetaBarImage",
+      "props": {
+        "Left": 33,
+        "Top": 91,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3LBetaGraduationImage",
+      "props": {
+        "Left": 8,
+        "Top": 111,
+        "Width": 20,
+        "Height": 153,
+        "Picture.Data": {
+          "extracted_binary_bytes": 12306
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3LBetaLabel",
+      "props": {
+        "Left": 48,
+        "Top": 279,
+        "Width": 8,
+        "Height": 13,
+        "Caption": "\u03b2",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindowText",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3LBetaSliderImage",
+      "props": {
+        "Tag": 34,
+        "Left": 27,
+        "Top": 201,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3LBetaValueImage",
+      "props": {
+        "Left": 33,
+        "Top": 75,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3LBetaValueLabel",
+      "props": {
+        "Tag": 34,
+        "Left": 45,
+        "Top": 80,
+        "Width": 6,
+        "Height": 14,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3LChannelImage",
+      "props": {
+        "Left": 18,
+        "Top": 31,
+        "Width": 116,
+        "Height": 47,
+        "Picture.Data": {
+          "extracted_binary_bytes": 21874
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3LChannelLabel",
+      "props": {
+        "Left": 55,
+        "Top": 47,
+        "Width": 64,
+        "Height": 15,
+        "Alignment": "taCenter",
+        "Caption": "L CHANNEL",
+        "Color": "clWhite",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentColor": false,
+        "ParentFont": false,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3RAlphaBarImage",
+      "props": {
+        "Left": 248,
+        "Top": 91,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3RAlphaGraduationImage",
+      "props": {
+        "Left": 224,
+        "Top": 111,
+        "Width": 20,
+        "Height": 153,
+        "Picture.Data": {
+          "extracted_binary_bytes": 12306
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3RAlphaLabel",
+      "props": {
+        "Left": 256,
+        "Top": 279,
+        "Width": 9,
+        "Height": 13,
+        "Caption": "\u03b1",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindowText",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3RAlphaSliderImage",
+      "props": {
+        "Tag": 37,
+        "Left": 248,
+        "Top": 138,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3RAlphaValueImage",
+      "props": {
+        "Left": 248,
+        "Top": 75,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3RAlphaValueLabel",
+      "props": {
+        "Tag": 37,
+        "Left": 260,
+        "Top": 80,
+        "Width": 6,
+        "Height": 14,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3RBetaBarImage",
+      "props": {
+        "Left": 308,
+        "Top": 91,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3RBetaGraduationImage",
+      "props": {
+        "Left": 285,
+        "Top": 111,
+        "Width": 20,
+        "Height": 153,
+        "Picture.Data": {
+          "extracted_binary_bytes": 12306
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3RBetaLabel",
+      "props": {
+        "Left": 320,
+        "Top": 279,
+        "Width": 8,
+        "Height": 13,
+        "Caption": "\u03b2",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindowText",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3RBetaSliderImage",
+      "props": {
+        "Tag": 36,
+        "Left": 303,
+        "Top": 201,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3RBetaValueImage",
+      "props": {
+        "Left": 308,
+        "Top": 75,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3RBetaValueLabel",
+      "props": {
+        "Tag": 36,
+        "Left": 320,
+        "Top": 80,
+        "Width": 6,
+        "Height": 14,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3RChannelImage",
+      "props": {
+        "Left": 232,
+        "Top": 31,
+        "Width": 116,
+        "Height": 47,
+        "Picture.Data": {
+          "extracted_binary_bytes": 21874
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3RChannelLabel",
+      "props": {
+        "Left": 245,
+        "Top": 47,
+        "Width": 65,
+        "Height": 15,
+        "Alignment": "taCenter",
+        "Caption": "R CHANNEL",
+        "Color": "clWhite",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentColor": false,
+        "ParentFont": false,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "D3ResetImage",
+      "props": {
+        "Tag": 6,
+        "Left": 242,
+        "Top": 0,
+        "Width": 123,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 13842
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "Visible": false,
+        "OnClick": "D3ResetImageClick",
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "D3ResetLabel",
+      "props": {
+        "Tag": 6,
+        "Left": 242,
+        "Top": 5,
+        "Width": 123,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "RESET",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false,
+        "OnClick": "D3ResetLabelClick",
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "Back_EffectImage",
+      "props": {
+        "Left": 29,
+        "Top": 438,
+        "Width": 365,
+        "Height": 292,
+        "Picture.Data": {
+          "extracted_binary_bytes": 320098
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "Back_MicImage",
+      "props": {
+        "Left": 22,
+        "Top": 453,
+        "Width": 365,
+        "Height": 292,
+        "Picture.Data": {
+          "extracted_binary_bytes": 320098
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicBoostImage",
+      "props": {
+        "Tag": 21,
+        "Left": 48,
+        "Top": 48,
+        "Width": 184,
+        "Height": 27,
+        "Picture.Data": {
+          "extracted_binary_bytes": 19938
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "MicBoostLabel",
+      "props": {
+        "Tag": 21,
+        "Left": 0,
+        "Top": 6,
+        "Width": 184,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Mic Boost",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicGainImage",
+      "props": {
+        "Left": 252,
+        "Top": 37,
+        "Width": 107,
+        "Height": 36,
+        "Picture.Data": {
+          "extracted_binary_bytes": 15474
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "MicGainLabel",
+      "props": {
+        "Left": 271,
+        "Top": 48,
+        "Width": 70,
+        "Height": 14,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Mic Gain",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicMuteImage",
+      "props": {
+        "Tag": 22,
+        "Left": 183,
+        "Top": 0,
+        "Width": 184,
+        "Height": 27,
+        "Picture.Data": {
+          "extracted_binary_bytes": 19938
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "MicMuteLabel",
+      "props": {
+        "Tag": 22,
+        "Left": 183,
+        "Top": 6,
+        "Width": 184,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Mic Mute",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicPicImage",
+      "props": {
+        "Left": 37,
+        "Top": 337,
+        "Width": 245,
+        "Height": 274,
+        "Picture.Data": {
+          "extracted_binary_bytes": 268586
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicValueImage",
+      "props": {
+        "Left": 294,
+        "Top": 72,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "Back_Virtual7p1Image",
+      "props": {
+        "Left": 8,
+        "Top": 472,
+        "Width": 365,
+        "Height": 292,
+        "Picture.Data": {
+          "extracted_binary_bytes": 320098
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualEnableImage",
+      "props": {
+        "Tag": 47,
+        "Left": 8,
+        "Top": 95,
+        "Width": 93,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 10482
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualPicImage",
+      "props": {
+        "Left": 421,
+        "Top": 31,
+        "Width": 371,
+        "Height": 271,
+        "Picture.Data": {
+          "extracted_binary_bytes": 402230
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualRBImage",
+      "props": {
+        "Tag": 46,
+        "Left": 238,
+        "Top": 310,
+        "Width": 25,
+        "Height": 25,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2566
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualRImage",
+      "props": {
+        "Tag": 40,
+        "Left": 270,
+        "Top": 239,
+        "Width": 25,
+        "Height": 26,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2666
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualRSImage",
+      "props": {
+        "Tag": 44,
+        "Left": 242,
+        "Top": 177,
+        "Width": 25,
+        "Height": 26,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2666
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualSUBImage",
+      "props": {
+        "Tag": 42,
+        "Left": 184,
+        "Top": 182,
+        "Width": 24,
+        "Height": 25,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2466
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualLSImage",
+      "props": {
+        "Tag": 43,
+        "Left": 121,
+        "Top": 179,
+        "Width": 24,
+        "Height": 26,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2562
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualLImage",
+      "props": {
+        "Tag": 39,
+        "Left": 96,
+        "Top": 239,
+        "Width": 26,
+        "Height": 25,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2666
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualLBImage",
+      "props": {
+        "Tag": 45,
+        "Left": 135,
+        "Top": 311,
+        "Width": 26,
+        "Height": 27,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2874
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualCImage",
+      "props": {
+        "Tag": 41,
+        "Left": 184,
+        "Top": 150,
+        "Width": 25,
+        "Height": 26,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2666
+        },
+        "Transparent": true,
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EffectPicImage",
+      "props": {
+        "Left": 395,
+        "Top": 121,
+        "Width": 366,
+        "Height": 293,
+        "Picture.Data": {
+          "extracted_binary_bytes": 429018
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EffectButtonNonImage",
+      "props": {
+        "Tag": 16,
+        "Left": 387,
+        "Top": 131,
+        "Width": 75,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8466
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EffectNonLabel",
+      "props": {
+        "Tag": 16,
+        "Left": 371,
+        "Top": 111,
+        "Width": 75,
+        "Height": 14,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Nothing",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EffectButtonTheaterImage",
+      "props": {
+        "Tag": 17,
+        "Left": 428,
+        "Top": 119,
+        "Width": 75,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8466
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EffectTheaterLabel",
+      "props": {
+        "Tag": 17,
+        "Left": 428,
+        "Top": 111,
+        "Width": 75,
+        "Height": 14,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Theater",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EffectButtonStoneGalleryImage",
+      "props": {
+        "Tag": 18,
+        "Left": 502,
+        "Top": 116,
+        "Width": 75,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8466
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EffectButtonLivingroomImage",
+      "props": {
+        "Tag": 19,
+        "Left": 574,
+        "Top": 113,
+        "Width": 75,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8466
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EffectLivingroomLabel",
+      "props": {
+        "Tag": 19,
+        "Left": 574,
+        "Top": 107,
+        "Width": 75,
+        "Height": 14,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Living room",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -11,
+        "Font.Name": "Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EffectButtonBathroomImage",
+      "props": {
+        "Tag": 20,
+        "Left": 655,
+        "Top": 115,
+        "Width": 75,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8466
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EffectStoneGalleryLabel",
+      "props": {
+        "Tag": 20,
+        "Left": 647,
+        "Top": 107,
+        "Width": 75,
+        "Height": 14,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "StoneGallery",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "EffectBathroomLabel",
+      "props": {
+        "Tag": 18,
+        "Left": 501,
+        "Top": 110,
+        "Width": 75,
+        "Height": 14,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Bathroom",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualNarrowImage",
+      "props": {
+        "Tag": 52,
+        "Left": 29,
+        "Top": 68,
+        "Width": 93,
+        "Height": 28,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 10482
+        },
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualEnlargeImage",
+      "props": {
+        "Tag": 53,
+        "Left": 125,
+        "Top": 65,
+        "Width": 93,
+        "Height": 28,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 10482
+        },
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VirtualNarrowLabel",
+      "props": {
+        "Tag": 52,
+        "Left": 53,
+        "Top": 62,
+        "Width": 46,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Narrow",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VirtualEnlargeLabel",
+      "props": {
+        "Tag": 53,
+        "Left": 137,
+        "Top": 59,
+        "Width": 49,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Enlarge",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualClockwiseImage",
+      "props": {
+        "Tag": 49,
+        "Left": 107,
+        "Top": 94,
+        "Width": 93,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 10482
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualCounterclockwiseImage",
+      "props": {
+        "Tag": 50,
+        "Left": 198,
+        "Top": 94,
+        "Width": 93,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 10482
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VirtualClockwiseLabel",
+      "props": {
+        "Tag": 49,
+        "Left": 80,
+        "Top": 104,
+        "Width": 92,
+        "Height": 25,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "CW",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VirtualCounterclockwiseLabel",
+      "props": {
+        "Tag": 50,
+        "Left": 196,
+        "Top": 99,
+        "Width": 92,
+        "Height": 25,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "CCW",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "PageEQImage",
+      "props": {
+        "Tag": 23,
+        "Left": 392,
+        "Top": 415,
+        "Width": 27,
+        "Height": 17,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "PageEQLabel",
+      "props": {
+        "Tag": 23,
+        "Left": 400,
+        "Top": 416,
+        "Width": 19,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "Caption": "EQ",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelPageMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "Page3DImage",
+      "props": {
+        "Tag": 24,
+        "Left": 439,
+        "Top": 420,
+        "Width": 26,
+        "Height": 13,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "Visible": false,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "Page3DLabel",
+      "props": {
+        "Tag": 24,
+        "Left": 445,
+        "Top": 416,
+        "Width": 16,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "Caption": "3D",
+        "Enabled": false,
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false,
+        "OnMouseDown": "OnLabelPageMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "PageEffectImage",
+      "props": {
+        "Tag": 25,
+        "Left": 479,
+        "Top": 415,
+        "Width": 27,
+        "Height": 19,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "PageEffectLabel",
+      "props": {
+        "Tag": 25,
+        "Left": 485,
+        "Top": 416,
+        "Width": 33,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "Caption": "Effect",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelPageMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "PageMicImage",
+      "props": {
+        "Tag": 26,
+        "Left": 537,
+        "Top": 415,
+        "Width": 27,
+        "Height": 19,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "PageMicLabel",
+      "props": {
+        "Tag": 26,
+        "Left": 545,
+        "Top": 416,
+        "Width": 21,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "Caption": "Mic",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelPageMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "PageVirtual7p1Image",
+      "props": {
+        "Tag": 27,
+        "Left": 592,
+        "Top": 415,
+        "Width": 27,
+        "Height": 19,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "PageVirtual7p1Label",
+      "props": {
+        "Tag": 27,
+        "Left": 575,
+        "Top": 416,
+        "Width": 55,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "Caption": "Virtual7.1",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelPageMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VirtualENLabel",
+      "props": {
+        "Tag": 47,
+        "Left": 17,
+        "Top": 99,
+        "Width": 92,
+        "Height": 25,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "7ch1-EN",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualResetImage",
+      "props": {
+        "Tag": 48,
+        "Left": 289,
+        "Top": 104,
+        "Width": 93,
+        "Height": 28,
+        "Picture.Data": {
+          "extracted_binary_bytes": 10482
+        },
+        "Stretch": true,
+        "OnClick": "VirtualResetImageClick",
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VirtualResetLabel",
+      "props": {
+        "Tag": 48,
+        "Left": 289,
+        "Top": 99,
+        "Width": 92,
+        "Height": 25,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "RESET",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnClick": "VirtualResetLabelClick",
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MainLeftImage",
+      "props": {
+        "Left": 281,
+        "Top": 313,
+        "Width": 105,
+        "Height": 105,
+        "OnMouseDown": "FormMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "DeviceInImage",
+      "props": {
+        "Tag": 54,
+        "Left": 305,
+        "Top": 387,
+        "Width": 62,
+        "Height": 49
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "DeviceOutImage",
+      "props": {
+        "Tag": 55,
+        "Left": 305,
+        "Top": 443,
+        "Width": 62,
+        "Height": 49
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "DeviceInLabel",
+      "props": {
+        "Tag": 54,
+        "Left": 354,
+        "Top": 405,
+        "Width": 69,
+        "Height": 13,
+        "Caption": "DeviceInLabel",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "DeviceOutLabel",
+      "props": {
+        "Tag": 55,
+        "Left": 354,
+        "Top": 453,
+        "Width": 77,
+        "Height": 13,
+        "Caption": "DeviceOutLabel",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ60HzBarDownImage",
+      "props": {
+        "Tag": 229,
+        "Left": 590,
+        "Top": 8,
+        "Width": 24,
+        "Height": 109,
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ300HzBarDownImage",
+      "props": {
+        "Tag": 230,
+        "Left": 625,
+        "Top": 8,
+        "Width": 24,
+        "Height": 109,
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ1200HzBarDownImage",
+      "props": {
+        "Tag": 231,
+        "Left": 662,
+        "Top": 8,
+        "Width": 24,
+        "Height": 109,
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ3600HzBarDownImage",
+      "props": {
+        "Tag": 232,
+        "Left": 698,
+        "Top": 8,
+        "Width": 24,
+        "Height": 109,
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ12000HzBarDownImage",
+      "props": {
+        "Tag": 233,
+        "Left": 736,
+        "Top": 8,
+        "Width": 24,
+        "Height": 109,
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ3600HzSliderImage",
+      "props": {
+        "Tag": 32,
+        "Left": 699,
+        "Top": 56,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ12000HzSliderImage",
+      "props": {
+        "Tag": 33,
+        "Left": 745,
+        "Top": 53,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "DeviceActiveImage",
+      "props": {
+        "Left": 675,
+        "Top": 16,
+        "Width": 97,
+        "Height": 21,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8214
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseDown": "FormMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "LogoImage",
+      "props": {
+        "Left": 318,
+        "Top": 293,
+        "Width": 49,
+        "Height": 49,
+        "Picture.Data": {
+          "extracted_binary_bytes": 323466
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseDown": "FormMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "BeeImage",
+      "props": {
+        "Left": 736,
+        "Top": 437,
+        "Width": 40,
+        "Height": 46,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 5586
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "CloseImage",
+      "props": {
+        "Left": 745,
+        "Top": 20,
+        "Width": 27,
+        "Height": 27,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2982
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "CloseImageClick",
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MinimizeImage",
+      "props": {
+        "Tag": 1,
+        "Left": 719,
+        "Top": 58,
+        "Width": 27,
+        "Height": 27,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2982
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "MinimizeImageClick",
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicButtonLineImage",
+      "props": {
+        "Left": 183,
+        "Top": 289,
+        "Width": 3,
+        "Height": 22,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicProgressImage",
+      "props": {
+        "Left": 8,
+        "Top": 298,
+        "Width": 203,
+        "Height": 17,
+        "Picture.Data": {
+          "extracted_binary_bytes": 14142
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicGraduationImage",
+      "props": {
+        "Left": 509,
+        "Top": 8,
+        "Width": 30,
+        "Height": 182,
+        "Picture.Data": {
+          "extracted_binary_bytes": 21906
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicBarImage",
+      "props": {
+        "Tag": 138,
+        "Left": 520,
+        "Top": 20,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicBarDownImage",
+      "props": {
+        "Tag": 238,
+        "Left": 532,
+        "Top": 8,
+        "Width": 24,
+        "Height": 109,
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicSliderImage",
+      "props": {
+        "Tag": 38,
+        "Left": 516,
+        "Top": 27,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "Color01Shape",
+      "props": {
+        "Tag": 151,
+        "Left": 350,
+        "Top": 305,
+        "Width": 20,
+        "Height": 20,
+        "Brush.Color": "clRed",
+        "Pen.Color": "clPurple",
+        "Shape": "stCircle",
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "Color02Shape",
+      "props": {
+        "Tag": 152,
+        "Left": 360,
+        "Top": 305,
+        "Width": 20,
+        "Height": 20,
+        "Brush.Color": 33023,
+        "Pen.Color": "clWhite",
+        "Shape": "stCircle",
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "Color03Shape",
+      "props": {
+        "Tag": 153,
+        "Left": 370,
+        "Top": 305,
+        "Width": 20,
+        "Height": 20,
+        "Brush.Color": "clYellow",
+        "Pen.Color": "clWhite",
+        "Shape": "stCircle",
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "Color04Shape",
+      "props": {
+        "Tag": 154,
+        "Left": 380,
+        "Top": 305,
+        "Width": 20,
+        "Height": 20,
+        "Brush.Color": "clLime",
+        "Pen.Color": "clWhite",
+        "Shape": "stCircle",
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "Color05Shape",
+      "props": {
+        "Tag": 155,
+        "Left": 380,
+        "Top": 305,
+        "Width": 20,
+        "Height": 20,
+        "Brush.Color": "clAqua",
+        "Pen.Color": "clWhite",
+        "Shape": "stCircle",
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "Color06Shape",
+      "props": {
+        "Tag": 156,
+        "Left": 390,
+        "Top": 305,
+        "Width": 20,
+        "Height": 20,
+        "Brush.Color": "clBlue",
+        "Pen.Color": "clWhite",
+        "Shape": "stCircle",
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "Color07Shape",
+      "props": {
+        "Tag": 157,
+        "Left": 400,
+        "Top": 305,
+        "Width": 20,
+        "Height": 20,
+        "Brush.Color": "clFuchsia",
+        "Pen.Color": "clWhite",
+        "Shape": "stCircle",
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "Color08Shape",
+      "props": {
+        "Tag": 158,
+        "Left": 410,
+        "Top": 305,
+        "Width": 12,
+        "Height": 12,
+        "Brush.Color": "clGray",
+        "Pen.Color": "clWhite",
+        "Visible": false,
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "Color09Shape",
+      "props": {
+        "Tag": 159,
+        "Left": 420,
+        "Top": 305,
+        "Width": 12,
+        "Height": 12,
+        "Pen.Color": "clWhite",
+        "Visible": false,
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "Color10Shape",
+      "props": {
+        "Tag": 160,
+        "Left": 430,
+        "Top": 305,
+        "Width": 12,
+        "Height": 12,
+        "Brush.Color": 8421631,
+        "Pen.Color": "clWhite",
+        "Visible": false,
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorRainbowCheckImage",
+      "props": {
+        "Tag": 339,
+        "Left": 700,
+        "Top": 510,
+        "Width": 17,
+        "Height": 17,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39046
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "ColorRainbowCheckImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ColorRainbowLabel",
+      "props": {
+        "Left": 650,
+        "Top": 500,
+        "Width": 49,
+        "Height": 15,
+        "Caption": "Rainbow",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorBreatheBarImage",
+      "props": {
+        "Tag": 238,
+        "Left": 500,
+        "Top": 418,
+        "Width": 143,
+        "Height": 5,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39486
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorBreatheCheckImage",
+      "props": {
+        "Tag": 338,
+        "Left": 700,
+        "Top": 470,
+        "Width": 17,
+        "Height": 17,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39046
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "ColorBreatheCheckImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ColorBreatheLabel",
+      "props": {
+        "Left": 650,
+        "Top": 460,
+        "Width": 43,
+        "Height": 15,
+        "Caption": "Breathe",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorBreatheSliderImage",
+      "props": {
+        "Tag": 438,
+        "Left": 770,
+        "Top": 465,
+        "Width": 20,
+        "Height": 20,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39741
+        },
+        "OnMouseDown": "ColorBreatheSliderImageMouseDown",
+        "OnMouseMove": "ColorBreatheSliderImageMouseMove",
+        "OnMouseUp": "ColorBreatheSliderImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorPaletteCImage",
+      "props": {
+        "Left": 870,
+        "Top": 180,
+        "Width": 56,
+        "Height": 56,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 40155
+        },
+        "Stretch": true,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorPaletteImage",
+      "props": {
+        "Left": 844,
+        "Top": 145,
+        "Width": 140,
+        "Height": 140,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 50999
+        },
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "ColorPaletteShape",
+      "props": {
+        "Tag": 190,
+        "Left": 1135,
+        "Top": 462,
+        "Width": 23,
+        "Height": 23,
+        "Shape": "stCircle",
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorPulsatingBarImage",
+      "props": {
+        "Tag": 237,
+        "Left": 925,
+        "Top": 378,
+        "Width": 143,
+        "Height": 5,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39486
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorPulsatingCheckImage",
+      "props": {
+        "Tag": 337,
+        "Left": 700,
+        "Top": 550,
+        "Width": 17,
+        "Height": 17,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39046
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "ColorPulsatingCheckImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ColorPulsatingLabel",
+      "props": {
+        "Left": 650,
+        "Top": 540,
+        "Width": 72,
+        "Height": 15,
+        "Caption": "Multi-Breathe",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorPulsatingSliderImage",
+      "props": {
+        "Tag": 437,
+        "Left": 770,
+        "Top": 545,
+        "Width": 20,
+        "Height": 20,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39741
+        },
+        "OnMouseDown": "ColorPulsatingSliderImageMouseDown",
+        "OnMouseMove": "ColorPulsatingSliderImageMouseMove",
+        "OnMouseUp": "ColorPulsatingSliderImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorSelectImage",
+      "props": {
+        "Left": 955,
+        "Top": 135,
+        "Width": 23,
+        "Height": 23,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39458
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "ColorSelectShape",
+      "props": {
+        "Tag": 190,
+        "Left": 907,
+        "Top": 137,
+        "Width": 20,
+        "Height": 20,
+        "Brush.Color": "clRed",
+        "Pen.Color": "clWhite",
+        "Pen.Style": "psClear",
+        "Shape": "stCircle",
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorRainbowBarImage",
+      "props": {
+        "Tag": 239,
+        "Left": 520,
+        "Top": 320,
+        "Width": 367,
+        "Height": 9,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2868
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorRainbowSliderImage",
+      "props": {
+        "Tag": 439,
+        "Left": 770,
+        "Top": 505,
+        "Width": 20,
+        "Height": 20,
+        "AutoSize": true,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39741
+        },
+        "OnMouseDown": "ColorRainbowSliderImageMouseDown",
+        "OnMouseMove": "ColorRainbowSliderImageMouseMove",
+        "OnMouseUp": "ColorRainbowSliderImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "PageLEDImage",
+      "props": {
+        "Tag": 228,
+        "Left": 625,
+        "Top": 438,
+        "Width": 27,
+        "Height": 19,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "Visible": false,
+        "OnClick": "PageLEDClick",
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "PageLEDLabel",
+      "props": {
+        "Tag": 228,
+        "Left": 609,
+        "Top": 440,
+        "Width": 25,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "Caption": "LED",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false,
+        "OnClick": "PageLEDLabelClick",
+        "OnMouseDown": "OnLabelPageMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ColorSelectLabel",
+      "props": {
+        "Left": 650,
+        "Top": 498,
+        "Width": 93,
+        "Height": 15,
+        "Caption": "SELECT COLOR",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ColorEffectLabel",
+      "props": {
+        "Left": 658,
+        "Top": 498,
+        "Width": 100,
+        "Height": 15,
+        "Caption": "EFFECT SETTING",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ColorLEDOffLabel",
+      "props": {
+        "Left": 666,
+        "Top": 498,
+        "Width": 50,
+        "Height": 15,
+        "Caption": "LED OFF",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ColorSingleLabel",
+      "props": {
+        "Left": 674,
+        "Top": 498,
+        "Width": 90,
+        "Height": 15,
+        "Caption": "SINGLE COLOR",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ColorSlowLabel",
+      "props": {
+        "Left": 682,
+        "Top": 498,
+        "Width": 35,
+        "Height": 15,
+        "Caption": "SLOW",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ColorFastLabel",
+      "props": {
+        "Left": 690,
+        "Top": 498,
+        "Width": 28,
+        "Height": 15,
+        "Caption": "FAST",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "ColorBreatheShape",
+      "props": {
+        "Tag": 183,
+        "Left": 1135,
+        "Top": 462,
+        "Width": 23,
+        "Height": 23,
+        "Brush.Color": "clMaroon",
+        "Pen.Color": "clWhite",
+        "Shape": "stCircle",
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TShape",
+      "name": "ColorSingleShape",
+      "props": {
+        "Tag": 184,
+        "Left": 890,
+        "Top": 403,
+        "Width": 23,
+        "Height": 23,
+        "Brush.Color": "clNavy",
+        "Pen.Color": "clWhite",
+        "Shape": "stCircle",
+        "OnMouseDown": "OnShapeMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorLEDOffCheckImage",
+      "props": {
+        "Tag": 340,
+        "Left": 700,
+        "Top": 496,
+        "Width": 17,
+        "Height": 17,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39046
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "ColorLEDOffCheckImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ColorSingleCheckImage",
+      "props": {
+        "Tag": 341,
+        "Left": 708,
+        "Top": 496,
+        "Width": 17,
+        "Height": 17,
+        "Picture.Data": {
+          "extracted_binary_bytes": 39046
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "ColorSingleCheckImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "MicMonitorImage",
+      "props": {
+        "Tag": 89,
+        "Left": 216,
+        "Top": 31,
+        "Width": 184,
+        "Height": 27,
+        "Picture.Data": {
+          "extracted_binary_bytes": 19938
+        },
+        "Stretch": true,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EffectButtonLineImage1",
+      "props": {
+        "Left": 360,
+        "Top": 80,
+        "Width": 3,
+        "Height": 30,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EffectButtonLineImage2",
+      "props": {
+        "Left": 365,
+        "Top": 80,
+        "Width": 3,
+        "Height": 30,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EffectButtonLineImage3",
+      "props": {
+        "Left": 370,
+        "Top": 80,
+        "Width": 3,
+        "Height": 30,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EffectButtonLineImage4",
+      "props": {
+        "Left": 380,
+        "Top": 80,
+        "Width": 3,
+        "Height": 30,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        },
+        "Stretch": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQButtonLineImage1",
+      "props": {
+        "Left": 121,
+        "Top": 320,
+        "Width": 3,
+        "Height": 22,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQButtonLineImage2",
+      "props": {
+        "Left": 125,
+        "Top": 320,
+        "Width": 3,
+        "Height": 22,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQButtonLineImage3",
+      "props": {
+        "Left": 91,
+        "Top": 320,
+        "Width": 3,
+        "Height": 22,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQButtonLineImage4",
+      "props": {
+        "Left": 82,
+        "Top": 320,
+        "Width": 3,
+        "Height": 22,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQButtonLineImage5",
+      "props": {
+        "Left": 72,
+        "Top": 320,
+        "Width": 3,
+        "Height": 22,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualButtonLineImage1",
+      "props": {
+        "Left": 80,
+        "Top": 328,
+        "Width": 3,
+        "Height": 22,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualButtonLineImage2",
+      "props": {
+        "Left": 88,
+        "Top": 336,
+        "Width": 3,
+        "Height": 22,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VirtualButtonLineImage3",
+      "props": {
+        "Left": 96,
+        "Top": 344,
+        "Width": 3,
+        "Height": 22,
+        "Picture.Data": {
+          "extracted_binary_bytes": 330
+        }
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "PageENCImage",
+      "props": {
+        "Tag": 227,
+        "Left": 668,
+        "Top": 435,
+        "Width": 27,
+        "Height": 19,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "Visible": false,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "PageVMEffectImage",
+      "props": {
+        "Tag": 226,
+        "Left": 707,
+        "Top": 437,
+        "Width": 27,
+        "Height": 19,
+        "Picture.Data": {
+          "extracted_binary_bytes": 8258
+        },
+        "Visible": false,
+        "OnMouseDown": "OnImageMouseDown",
+        "OnMouseUp": "OnImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "PageENCLabel",
+      "props": {
+        "Tag": 227,
+        "Left": 658,
+        "Top": 451,
+        "Width": 25,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "Caption": "LED",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false,
+        "OnMouseDown": "OnLabelPageMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "PageVMEffectLabel",
+      "props": {
+        "Tag": 226,
+        "Left": 699,
+        "Top": 448,
+        "Width": 25,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "Caption": "LED",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true,
+        "Visible": false,
+        "OnMouseDown": "OnLabelPageMouseDown"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VMEffectNoneImage",
+      "props": {
+        "Left": 327,
+        "Top": 173,
+        "Width": 80,
+        "Height": 80,
+        "Picture.Data": {
+          "extracted_binary_bytes": 1209
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "VMEffectNoneImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VMEffect1Image",
+      "props": {
+        "Left": 250,
+        "Top": 207,
+        "Width": 80,
+        "Height": 80,
+        "Picture.Data": {
+          "extracted_binary_bytes": 4467
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "VMEffect1ImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VMEffect4Image",
+      "props": {
+        "Left": 264,
+        "Top": 227,
+        "Width": 80,
+        "Height": 80,
+        "Picture.Data": {
+          "extracted_binary_bytes": 4092
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "VMEffect4ImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VMEffect3Image",
+      "props": {
+        "Left": 271,
+        "Top": 288,
+        "Width": 80,
+        "Height": 80,
+        "Picture.Data": {
+          "extracted_binary_bytes": 3600
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "VMEffect3ImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VMEffect2Image",
+      "props": {
+        "Left": 343,
+        "Top": 329,
+        "Width": 80,
+        "Height": 80,
+        "Picture.Data": {
+          "extracted_binary_bytes": 5020
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "VMEffect2ImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ENCFunctionLabel",
+      "props": {
+        "Left": 698,
+        "Top": 498,
+        "Width": 50,
+        "Height": 15,
+        "Caption": "LED OFF",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false,
+        "OnClick": "ENCFunctionImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VMEffectNoneLabel",
+      "props": {
+        "Left": 496,
+        "Top": 490,
+        "Width": 50,
+        "Height": 15,
+        "Caption": "LED OFF",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false,
+        "OnClick": "VMEffectNoneImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VMEffect1Label",
+      "props": {
+        "Left": 496,
+        "Top": 473,
+        "Width": 50,
+        "Height": 15,
+        "Caption": "LED OFF",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false,
+        "OnClick": "VMEffect1ImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VMEffect2Label",
+      "props": {
+        "Left": 722,
+        "Top": 498,
+        "Width": 50,
+        "Height": 15,
+        "Caption": "LED OFF",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false,
+        "OnClick": "VMEffect2ImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VMEffect3Label",
+      "props": {
+        "Left": 730,
+        "Top": 498,
+        "Width": 50,
+        "Height": 15,
+        "Caption": "LED OFF",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false,
+        "OnClick": "VMEffect3ImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VMEffect4Label",
+      "props": {
+        "Left": 738,
+        "Top": 498,
+        "Width": 50,
+        "Height": 15,
+        "Caption": "LED OFF",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false,
+        "OnClick": "VMEffect4ImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "VMFunctionLabel",
+      "props": {
+        "Left": 746,
+        "Top": 498,
+        "Width": 50,
+        "Height": 15,
+        "Caption": "LED OFF",
+        "Color": "clBlack",
+        "Font.Charset": "DEFAULT_CHARSET",
+        "Font.Color": "clWhite",
+        "Font.Height": -12,
+        "Font.Name": "Arial",
+        "Font.Style": [],
+        "ParentColor": false,
+        "ParentFont": false,
+        "OnClick": "VMFunctionImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ENCFunctionImage",
+      "props": {
+        "Tag": 338,
+        "Left": 708,
+        "Top": 478,
+        "Width": 17,
+        "Height": 17,
+        "Picture.Data": {
+          "extracted_binary_bytes": 3730
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "ENCFunctionImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "VMFunctionImage",
+      "props": {
+        "Tag": 338,
+        "Left": 747,
+        "Top": 475,
+        "Width": 17,
+        "Height": 17,
+        "Picture.Data": {
+          "extracted_binary_bytes": 3730
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnClick": "VMFunctionImageClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ENCBarImage",
+      "props": {
+        "Tag": 188,
+        "Left": 468,
+        "Top": 70,
+        "Width": 31,
+        "Height": 191,
+        "Picture.Data": {
+          "extracted_binary_bytes": 23750
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ENCSliderImage",
+      "props": {
+        "Tag": 88,
+        "Left": 463,
+        "Top": 47,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true,
+        "OnMouseDown": "ENCSliderImageMouseDown",
+        "OnMouseMove": "ENCSliderImageMouseMove",
+        "OnMouseUp": "ENCSliderImageMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TBevel",
+      "name": "Bevel2",
+      "props": {
+        "Left": 465,
+        "Top": 415,
+        "Width": 8,
+        "Height": 17,
+        "Shape": "bsRightLine",
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TBevel",
+      "name": "Bevel3",
+      "props": {
+        "Left": 525,
+        "Top": 416,
+        "Width": 8,
+        "Height": 17,
+        "Shape": "bsRightLine",
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TBevel",
+      "name": "Bevel4",
+      "props": {
+        "Left": 570,
+        "Top": 416,
+        "Width": 8,
+        "Height": 17,
+        "Shape": "bsRightLine",
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TBevel",
+      "name": "Bevel7",
+      "props": {
+        "Left": 541,
+        "Top": 432,
+        "Width": 8,
+        "Height": 17,
+        "Shape": "bsRightLine",
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TBevel",
+      "name": "Bevel5",
+      "props": {
+        "Left": 578,
+        "Top": 424,
+        "Width": 8,
+        "Height": 17,
+        "Shape": "bsRightLine",
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TBevel",
+      "name": "Bevel6",
+      "props": {
+        "Left": 533,
+        "Top": 424,
+        "Width": 8,
+        "Height": 17,
+        "Shape": "bsRightLine",
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "ENCValueImage",
+      "props": {
+        "Left": 286,
+        "Top": 79,
+        "Width": 30,
+        "Height": 23,
+        "Picture.Data": {
+          "extracted_binary_bytes": 2826
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "MicValueLabel",
+      "props": {
+        "Tag": 38,
+        "Left": 339,
+        "Top": 79,
+        "Width": 15,
+        "Height": 14,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "ENCValueLabel",
+      "props": {
+        "Tag": 38,
+        "Left": 310,
+        "Top": 85,
+        "Width": 15,
+        "Height": 14,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "0",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": "clWindow",
+        "Font.Height": -11,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [],
+        "ParentFont": false,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ1200HzSliderImage",
+      "props": {
+        "Tag": 31,
+        "Left": 655,
+        "Top": 56,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ60HzSliderImage",
+      "props": {
+        "Tag": 29,
+        "Left": 562,
+        "Top": 51,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TImage",
+      "name": "EQ300HzSliderImage",
+      "props": {
+        "Tag": 30,
+        "Left": 609,
+        "Top": 51,
+        "Width": 40,
+        "Height": 45,
+        "Picture.Data": {
+          "extracted_binary_bytes": 7266
+        },
+        "Stretch": true,
+        "Transparent": true
+      },
+      "children": []
+    },
+    {
+      "class": "TLabel",
+      "name": "MicMonitorLabel",
+      "props": {
+        "Tag": 89,
+        "Left": 191,
+        "Top": 14,
+        "Width": 184,
+        "Height": 16,
+        "Alignment": "taCenter",
+        "AutoSize": false,
+        "Caption": "Monitor",
+        "Font.Charset": "ARABIC_CHARSET",
+        "Font.Color": 16054696,
+        "Font.Height": -13,
+        "Font.Name": "MS Sans Serif",
+        "Font.Style": [
+          "fsBold"
+        ],
+        "ParentFont": false,
+        "Transparent": true,
+        "OnMouseDown": "OnLabelMouseDown",
+        "OnMouseUp": "OnLabelMouseUp"
+      },
+      "children": []
+    },
+    {
+      "class": "TDirectoryListBox",
+      "name": "DirectoryListBox",
+      "props": {
+        "Left": 22,
+        "Top": 434,
+        "Width": 145,
+        "Height": 33,
+        "TabOrder": 0,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TListBox",
+      "name": "ListBoxLanguageMap",
+      "props": {
+        "Left": 69,
+        "Top": 364,
+        "Width": 121,
+        "Height": 49,
+        "ItemHeight": 13,
+        "TabOrder": 1,
+        "Visible": false
+      },
+      "children": []
+    },
+    {
+      "class": "TCheckBox",
+      "name": "ListenToDeviceCheckBox",
+      "props": {
+        "Left": 393,
+        "Top": 452,
+        "Width": 97,
+        "Height": 17,
+        "Caption": "ListenToDevice",
+        "Enabled": false,
+        "TabOrder": 2,
+        "Visible": false,
+        "OnClick": "ListenToDeviceCheckBoxClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TCheckBox",
+      "name": "BeeCheckBox",
+      "props": {
+        "Left": 655,
+        "Top": 417,
+        "Width": 46,
+        "Height": 17,
+        "Caption": "Bee",
+        "TabOrder": 3,
+        "OnClick": "BeeCheckBoxClick"
+      },
+      "children": []
+    },
+    {
+      "class": "TMediaPlayer",
+      "name": "MediaPlayer",
+      "props": {
+        "Left": 539,
+        "Top": 369,
+        "Width": 253,
+        "Height": 30,
+        "Visible": false,
+        "ParentShowHint": false,
+        "ShowHint": false,
+        "TabOrder": 4
+      },
+      "children": []
+    },
+    {
+      "class": "TCTrayIcon",
+      "name": "CTrayIcon",
+      "props": {
+        "Visible": true,
+        "PopupMenu": "PopupMenu",
+        "Hide": true,
+        "RestoreOn": "imDoubleClick",
+        "PopupMenuOn": "imRightClickUp",
+        "Icons": "ImageList",
+        "OnRestore": "CTrayIconRestore",
+        "Left": 136,
+        "Top": 8
+      },
+      "children": []
+    },
+    {
+      "class": "TPopupMenu",
+      "name": "PopupMenu",
+      "props": {
+        "Left": 72,
+        "Top": 8
+      },
+      "children": [
+        {
+          "class": "TMenuItem",
+          "name": "LanguageMenu",
+          "props": {
+            "Caption": "Language"
+          },
+          "children": []
+        },
+        {
+          "class": "TMenuItem",
+          "name": "SkinMenu",
+          "props": {
+            "Caption": "Skin"
+          },
+          "children": []
+        },
+        {
+          "class": "TMenuItem",
+          "name": "ModeMenu",
+          "props": {
+            "Caption": "Plugin"
+          },
+          "children": []
+        },
+        {
+          "class": "TMenuItem",
+          "name": "CloseMenu",
+          "props": {
+            "Caption": "Close",
+            "OnClick": "CloseMenuClick"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "class": "TSaveDialog",
+      "name": "SaveDialog",
+      "props": {
+        "FileName": "AudioSetting.ini",
+        "Filter": "INI (*.ini)|*.ini",
+        "Left": 408,
+        "Top": 8
+      },
+      "children": []
+    },
+    {
+      "class": "TOpenDialog",
+      "name": "OpenDialog",
+      "props": {
+        "Filter": "INI (*.ini)|*.ini",
+        "Left": 480,
+        "Top": 8
+      },
+      "children": []
+    },
+    {
+      "class": "TImageList",
+      "name": "ImageList",
+      "props": {
+        "Left": 16,
+        "Top": 8
+      },
+      "children": []
+    },
+    {
+      "class": "TTimer",
+      "name": "Timer",
+      "props": {
+        "Interval": 20,
+        "OnTimer": "TimerTimer",
+        "Left": 336,
+        "Top": 16
+      },
+      "children": []
+    },
+    {
+      "class": "TTimer",
+      "name": "BeeTimer",
+      "props": {
+        "Enabled": false,
+        "Interval": 10,
+        "OnTimer": "BeeTimerTimer",
+        "Left": 552,
+        "Top": 456
+      },
+      "children": []
+    },
+    {
+      "class": "TTimer",
+      "name": "BeePlayTimer",
+      "props": {
+        "Enabled": false,
+        "Interval": 100,
+        "OnTimer": "BeePlayTimerTimer",
+        "Left": 608,
+        "Top": 456
+      },
+      "children": []
+    },
+    {
+      "class": "TColorDialog",
+      "name": "ColorDialog",
+      "props": {
+        "Left": 536,
+        "Top": 8
+      },
+      "children": []
+    },
+    {
+      "class": "TTimer",
+      "name": "Timer1",
+      "props": {
+        "Interval": 2000,
+        "OnTimer": "Timer1Timer",
+        "Left": 600,
+        "Top": 16
+      },
+      "children": []
+    }
+  ]
+}

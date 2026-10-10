@@ -1,0 +1,8 @@
+{
+  "version": "1.1.0",
+  "audio_sources": "unchanged from user-tested 1.0; byte compared",
+  "browser": "Chromium 151: all five tabs, three viewport sizes, PNG/original image decode, no clipping or photo/caption overlap, no JS errors",
+  "bridge": "EQ slots, reverb, surround rotation/speaker test, mic gain/boost, save payload passed with native audio callbacks mocked",
+  "model": "RAPOO VH310, explicitly confirmed",
+  "native_window": "title, dark appearance and charcoal color updated; macOS rebuild required"
+}

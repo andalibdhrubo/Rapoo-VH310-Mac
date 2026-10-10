@@ -1,0 +1,23 @@
+PROJECT CREDITS
+
+Project by Andalib Ahmmed Dhrubo.
+Developed with ChatGPT assistance from OpenAI for code generation, adaptation,
+debugging, and documentation, with project direction and headset testing by
+Andalib Ahmmed Dhrubo.
+
+SOURCE AND REFERENCE
+This unofficial macOS compatibility project was developed using the supplied
+official Rapoo Windows audio driver/control application package as a reference.
+The Windows application's interface layout and extracted artwork informed the
+Mac version. The macOS audio implementation uses native Apple audio APIs and
+custom processing; it is not the original Windows driver running on macOS and
+does not reproduce every proprietary Rapoo feature or DSP algorithm.
+
+THIRD-PARTY CREDITS
+Rapoo names, logos, and original driver artwork belong to their respective
+owners. This project is not affiliated with, endorsed by, or supported by Rapoo.
+ChatGPT is a tool used in development; OpenAI does not endorse this project.
+MIT KEMAR HRTF measurements: Bill Gardner and Keith Martin, MIT Media Lab, 1994.
+See Resources/HRTF-attribution.txt for the existing data attribution and terms.
+These project credits do not claim ownership of third-party artwork or data,
+and do not grant a new license for those materials.

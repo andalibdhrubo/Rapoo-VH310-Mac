@@ -1,0 +1,11 @@
+Product asset: Headset-Product.png (transparent RGBA PNG)
+Reference: user supplied 47288.png. Model name: RAPOO VH310, confirmed by user.
+Method: built-in image generation tool, background extraction edit.
+Prompt: Remove only the white background, including the areas inside and
+between the headband arches and earcups. Preserve the exact headphone design,
+original viewing angle, ear cushions, twin headband rails, boom microphone and
+visible cable end, materials and markings. Keep the full product centered and
+uncropped with a small transparent margin. Clean antialiased edges, no white
+fringe, no new text, backdrop, decorative glow or floor shadow. Retain natural
+highlights on the black plastic.
+The product caption is live HTML text, not baked into this PNG.

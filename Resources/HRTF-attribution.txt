@@ -1,0 +1,24 @@
+HRTF Measurements of a KEMAR Dummy-Head Microphone
+Bill Gardner and Keith Martin, MIT Media Lab, 1994.
+Copyright 1994 MIT Media Laboratory. Data provided free without restrictions
+on use provided the authors are cited for research/commercial applications.
+Source: https://sound.media.mit.edu/resources/KEMAR.html
+Archive: https://sound.media.mit.edu/resources/KEMAR/compact.zip
+Included measurement: elev0/H0e030a.wav (128 samples, stereo, 44.1 kHz).
+Channel 1 is the left ear (far), channel 2 the right ear (near) for a source
+30 degrees right. Ear responses are swapped for a mirrored source 30 degrees
+left. Both speaker sources stay horizontal and in front; no head tracking.
+Rates 48, 88.2 and 96 kHz resampled with scipy.signal.resample_poly, with
+coefficient sum scaling by originalRate/newRate to retain impulse gain.
+Processing is an independent implementation, not Rapoo's original algorithm.
+
+FINAL 1.0 SURROUND ADDITIONS
+The 7.1 renderer uses horizontal compact measurements from elev0/H0e000a.wav
+through H0e180a.wav in 5-degree steps; negative angles swap ear responses.
+Default directions: FL -30, FR +30, C 0, BL -150, BR +150, SL -90, SR +90.
+LFE is a centered two-pole 120 Hz lowpass, not a directional HRIR.
+Rotation selects the nearest 5-degree measurement, with 30 ms filter crossfade.
+All coefficient banks and a source/hash manifest are included. Original 0, 30,
+90 and 150 degree WAVs are supplied for reproducible isolated-channel tests.
+Stereo upmix derives ambience from L-R with a 12 ms rear delay. It cannot
+recover independent surround channels lost during upstream stereo downmix.

@@ -1,0 +1,8 @@
+{
+  "source_wav_sha256": "c70f9f2ac84851bdbd1443ee6256e03513d23e8dc9f0e05cc38a0fddd5737f11",
+  "compact_archive_sha256": "0bcd69f8e8760cf8eacff4a89594ceca7d44fb94f28ecf0bf19970003bbfb3e0",
+  "elevation": 0,
+  "azimuth_right": 30,
+  "azimuth_left": -30,
+  "sample_rate": 44100
+}

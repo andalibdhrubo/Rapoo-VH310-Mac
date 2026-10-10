@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs><linearGradient id="blue" x1="0" y1="0" x2="0.6" y2="1"><stop stop-color="#57b9da"/><stop offset="1" stop-color="#247b9f"/></linearGradient><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur stdDeviation="12"/></filter></defs>
+<path d="M290 80H734C884 80 944 140 944 290V734C944 884 884 944 734 944H290C140 944 80 884 80 734V290C80 140 140 80 290 80Z" fill="#000" opacity=".22" filter="url(#shadow)" transform="translate(0 12)"/>
+<path d="M290 64H734C884 64 944 124 944 274V718C944 868 884 928 734 928H290C140 928 80 868 80 718V274C80 124 140 64 290 64Z" fill="url(#blue)" stroke="#8ad6eb" stroke-opacity=".5" stroke-width="3"/>
+<path d="M220 252L512 525L804 252V511L512 784L220 511Z" fill="white"/>
+</svg>
